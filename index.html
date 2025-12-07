@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"></meta>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarenContact</title>
+</head>
+<body>
+    <div id="loader"></div>
+    <div class="bg"></div>
+    <div class="title">
+        <img class="DT" src="pictures/DTcoding.jpg">
+        <h1>Website Design</h1>
+        <p>Contact me through the following methods</p>
+</div>
+<hr>
+<div class="line"><hr></div>
+    <div class="content">
+       <div class="C1">
+        <p>Want your own independent blog website?</p>
+       <img class="pc1" src="pictures/exm1.png" alt="Blog Website">
+       <p class="d1">I am a growing web developer focused on frontend design and interactive user experiences.
+This website serves as my personal portfolio, showcasing my skills in HTML, CSS, and JavaScript, as well as my understanding of layout, animation, and visual presentation.</p>
+        <p class="d2">I am capable of:</p>
+        <ul class="list">
+            <li>Creating modern layouts and UI/UX designs</li>
+            <li>Building responsive websites for both desktop and mobile</li>
+            <li>Implementing JavaScript interactions and animations</li>
+            <li>Structuring clean and organized frontend code</li>
+            <li>Designing smooth loading animations and visual effects</li>
+        </ul>
+</div>
+<hr class="line2">
+       <div class="C2">
+        <h2>If you want it</h2>
+        <p>Just Contact Me!</p>
+       <a class="Facebook" href="https://www.facebook.com/share/1Bfvw8r2wX/?mibextid=wwXIfr" target="_blank">
+        <i class="fab fa-facebook fa-3x"></i>
+       </a>
+       <a class="Whastapp" href="https://wa.me/+60128005637" target="_blank">
+        <i class="fab fa-whatsapp fa-3x"></i>
+       </a>
+        <a class="Telegram" href="https://t.me/tiongxungtao" target="_blank">
+        <i class="fab fa-telegram fa-3x"></i>
+        </a>
+        <a class="Gmail" href="mailto:tiongxungtao@gmail.com" target="_blank">
+        <i class="fas fa-envelope fa-3x"></i>
+        <a class="Fiver" href="" target="_blank">
+        <i class="fas fa-briefcase fa-3x"></i>
+        </a>
+        </div>
+    </body>
+
+<script>
+    
+ window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const elements = document.querySelectorAll(".content, .title, .DT");
+
+    setTimeout(() => {
+        loader.style.display = "none";
+        elements.forEach(el => el.classList.add("show"));
+        document.body.style.overflow = "auto";
+    }, 500);
+});
+
+</script>
+
+<style>
+    @media screen and (min-width:1200px) {
+    html {
+        font-size: 10px;
+    }
+    }
+     
+    @media screen and (max-width:1200px) {
+    html {
+        font-size: 5px;
+    }
+    }
+    
+    html,body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+    .bg {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-image: url("pictures/bg.jpg");
+    background-size: cover;
+    filter: blur(8px);       
+    z-index: -1;
+    background-repeat: no-repeat;                   
+}
+    .DT {
+        border-radius: 50px;
+        display: flex;
+        justify-content: start;  
+        position: relative;
+        bottom: 0rem;
+        width: 10rem;
+        height: 10rem; 
+        left: 2rem;
+    }
+
+  
+    .title p, h1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        bottom: 10rem;
+    }
+    
+    .title {
+    font-size: 1.5rem;
+    position: relative;
+    color: aliceblue;
+    z-index: 1;
+    height: 10rem;
+    width: 400rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-align: center;
+}
+    .content ,.title ,.DT{
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: all 1s ease;
+    }
+
+.content .C1 {
+    position: relative;
+    width: 100rem;
+    height: 30rem;
+    margin: 5rem auto;
+    padding: 2rem;;
+    text-align: center;
+}
+
+.content .C1 p {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+
+.content .C1 .d1 {
+    background: #838383 , 0.5;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 5rem;
+    margin-left: -40rem;
+    width: 90rem;
+}
+
+.content .C1 .d2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 7rem;
+    margin-left: 0rem;
+}
+
+
+.line hr {
+    position: relative;
+    top: 148rem;
+}
+
+.content .C1 .list {
+    display: flex;
+    justify-content: space-around;
+    background: #838383 , 0.5;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    position: relative;
+    width: 90rem;
+    top: 8rem;
+    margin-left: 50rem;
+    text-align: left;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.content .C1 .pc1 {
+    position: relative;
+    width: 150%;
+    height: 300%;
+    top: 5rem;
+    margin-left: -25rem;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.line2 {
+    position: relative;
+    top: 123rem;
+}
+
+.content .C2 p {
+    position: relative;
+    top: 140rem;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.content .C2 h2 {
+    position: relative;
+    top: 130rem;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.content .C2 {
+    display: block;
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.content .C2 a {
+    position: relative;
+    display: inline;
+    font-size: large;
+    top: 145rem;
+    margin: 0 5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.content .C2 a:hover {
+    color: #838383;
+}
+
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #838383;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 10;
+    background: transparent;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
